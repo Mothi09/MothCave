@@ -1,69 +1,40 @@
-/* Global */
+/* General */
 body {
-  margin: 0;
+  background-color: pink;
   font-family: Arial, sans-serif;
-  background: pink; /* base pink background */
-  color: #222;
-  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Hero (title area) */
-.hero {
-  padding: 2rem 1rem;
+header, section, footer {
+  background: #ffb6c1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 
 .title {
-  font-family: Papyrus, 'Cinzel Decorative', fantasy; /* Papyrus or fallback */
-  font-size: 4rem;
-  margin: 0;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Sections */
-.section {
-  margin: 2rem auto;
-  max-width: 800px;
-  padding: 2rem;
-  border-radius: 12px;
-}
-
-.section.light {
-  background: #ffb6c1; /* lighter pink */
-}
-
-.section.dark {
-  background: #ff69b4; /* darker pink */
-  color: #fff;
-}
-
-/* Minesweeper placeholder */
-#game-container {
-  margin-top: 1rem;
-  min-height: 200px;
-  border: 2px dashed #fff;
-  padding: 1rem;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.2);
-}
-
-/* Footer */
-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #444;
+  font-family: Papyrus, fantasy;
+  font-size: 3rem;
 }
 
 /* Minesweeper */
-.controls {
-  margin-bottom: 1rem;
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 5px 10px;
+  border: 2px solid #999;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#reset {
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 #game-container {
