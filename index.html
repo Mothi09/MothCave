@@ -1,49 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>MothCave</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <!-- fallback Google font similar to Papyrus -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1 class="title">MothCave</h1>
-    <p class="subtitle">Welcome to MothCave — a little place for updates, experiments, and a classic game of Minesweeper.</p>
+    <p>Welcome to MothCave — a little place for updates, experiments, and a classic game of Minesweeper.</p>
   </header>
 
-  <main>
-    <!-- Updates Section -->
-    <section id="updates" class="section light">
-      <h2>Updates</h2>
-      <ul>
-        <li><strong>Sept 12, 2025:</strong> Site launched! 🎉</li>
-        <li><strong>Future Update:</strong> Add more cool stuff here.</li>
-      </ul>
-    </section>
+  <section class="updates">
+    <h2>Updates</h2>
+    <ul>
+      <li><strong>Sept 12, 2025:</strong> Site launched! 🎉</li>
+      <li><strong>Future Update:</strong> Minesweeper fully playable with counter + timer!</li>
+    </ul>
+  </section>
 
-    <!-- Minesweeper Section -->
-<section id="minesweeper" class="section dark">
-  <h2>Minesweeper</h2>
-  
-  <div class="controls">
-    <button id="reset">🙂 Reset</button>
-    <label>
-      Difficulty:
+  <section class="minesweeper">
+    <h2>Minesweeper</h2>
+
+    <div class="game-header">
+      <span id="mine-counter">Mines: 0</span>
+      <button id="reset">🙂</button>
+      <span id="timer">Time: 0</span>
+    </div>
+
+    <div class="controls">
+      <label for="difficulty">Difficulty:</label>
       <select id="difficulty">
         <option value="easy">Easy (9x9, 10 mines)</option>
         <option value="medium">Medium (16x16, 40 mines)</option>
         <option value="hard">Hard (30x16, 99 mines)</option>
       </select>
-    </label>
-  </div>
+    </div>
 
-  <div id="game-container"></div>
-</section>
-
-  </main>
+    <div id="game-container"></div>
+  </section>
 
   <footer>
     <p>© 2025 MothCave</p>
