@@ -30,63 +30,6 @@ header, section, footer {
   margin: 0 0 10px;
 }
 
-/* === Minesweeper specific === */
-.game-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #eee;
-  padding: 5px 10px;
-  border: 2px solid #999;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#reset {
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-#game-container {
-  display: inline-block;
-  border: 3px solid #fff;
-  background: #eee;
-}
-
-.row {
-  display: flex;
-}
-
-.cell {
-  width: 24px;
-  height: 24px;
-  border: 1px solid #999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none;
-}
-
-.cell.hidden {
-  background: #ccc;
-}
-
-.cell.revealed {
-  background: #ddd;
-}
-
-.cell.mine {
-  background: #f55;
-}
-
-.cell.flag {
-  background: #ccf;
-}
 
 /* Section container */
 .cube-section {
