@@ -85,22 +85,12 @@ header, section, footer {
   to   { transform: rotateX(360deg) rotateY(360deg); }
 }
 
-.dropdown {
-  position: relative; /* Essential for positioning dropdown-content */
-  display: inline-block; /* Allows side-by-side placement */
-}
-
 .dropdown-content {
-  display: none; /* Hidden by default */
+  display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px; /* Adjust as needed */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1; /* Ensures it appears above other elements */
-  padding: 10px; /* Add padding for readability */
-}
-
-/* Show the dropdown content on hover (for simple hover menus) */
-.dropdown:hover .dropdown-content {
-  display: block;
+  background-color: white;
+  min-width: 250px; /* ⬅️ make this larger (e.g., 250px, 300px, etc.) */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 1;
 }
