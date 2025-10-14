@@ -20,37 +20,83 @@
     </ul>
   </section>
 
-<div class="dropdown">
-  <button class="dropdown-toggle">More Info</button>
-  <div class="dropdown-content">
-    <p>This is a paragraph with a lot of text that provides detailed information about the selected option. It can include multiple sentences and even multiple paragraphs for comprehensive content.</p>
-    <ul>
-      <li>Item 1 with more details</li>
-      <li>Item 2 with additional information</li>
-    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu Example</title>
+  <style>
+    /* Basic page setup */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    /* The button */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .dropbtn:hover {
+      background-color: #45a049;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    /* Each item in the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the menu when hovering over the button */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2</a>
+      <a href="#">Item 3</a>
+    </div>
   </div>
-</div>
-  
-  <section class="minesweeper box">
-    <h2>Minesweeper</h2>
 
-    <div class="game-header">
-      <span id="mine-counter">Mines: 0</span>
-      <button id="reset">🙂</button>
-      <span id="timer">Time: 0</span>
-    </div>
+</body>
+</html>
 
-    <div class="controls">
-      <label for="difficulty">Difficulty:</label>
-      <select id="difficulty">
-        <option value="easy">Easy (9x9, 10 mines)</option>
-        <option value="medium">Medium (16x16, 40 mines)</option>
-        <option value="hard">Hard (30x16, 99 mines)</option>
-      </select>
-    </div>
-
-    <div id="game-container"></div>
-  </section>
 
 <section class="Message of the day box">
     <h2>Message of the day</h2>
