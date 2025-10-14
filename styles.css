@@ -84,3 +84,23 @@ header, section, footer {
   from { transform: rotateX(0deg) rotateY(0deg); }
   to   { transform: rotateX(360deg) rotateY(360deg); }
 }
+
+.dropdown {
+  position: relative; /* Essential for positioning dropdown-content */
+  display: inline-block; /* Allows side-by-side placement */
+}
+
+.dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px; /* Adjust as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Ensures it appears above other elements */
+  padding: 10px; /* Add padding for readability */
+}
+
+/* Show the dropdown content on hover (for simple hover menus) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
