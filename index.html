@@ -1,143 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MothCave</title>
-  <h><small>--Main Menu--</small></h>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1 class="title">MothCave</h1>
-    <p>Welcome to my little place. have fun I guess, or ignore it.</p>
-  </header>
-
-  <section class="updates box">
-    <h2>Updates</h2>
-    <ul>
-      <li><strong>Sept 12, 2025:</strong> Site launched! 🎉</li>
-      <li><strong>Future Update:</strong> Minesweeper fully playable with counter + timer!</li>
-      <li><Strong>Oct 14, 2025:</Strong> I broke the minesweeper and added spinny cube</li>
-    </ul>
-  </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MothCave Links</title>
+<title>MothCave</title>
 <style>
   body {
-    background-color: #f76d99;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
-  .container {
-    border: 1px solid #b54a6b;
-    border-radius: 10px;
+  /* Navigation links */
+  nav {
+    margin: 20px 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #ffcc00;
+  }
+
+  /* Boxes */
+  .box {
+    background: #2c2c2c;
+    border-radius: 15px;  /* rounded corners */
     padding: 20px;
-    animation: rainbow 10s linear infinite;
-    background: linear-gradient(270deg, 
-      red, orange, yellow, green, cyan, blue, violet, red);
-    background-size: 400% 400%;
+    margin: 20px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   }
 
-  @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  /* Grid for mini boxes */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
   }
-
-  h1 {
-    color: black;
-  }
-
-  a {
-    color: purple;
+  .grid .mini-box {
+    background: #3a3a3a;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   }
 </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>MothCave Pages</h1>
-  <ul>
-    <li><a href="https://mothi09.github.io/MothCaveArchive/">The Archive</a></li>
-    <li><a href="https://mothi09.github.io/People/">People</a></li>
-    <li><a href="https://mothi09.github.io/People/">Gallery(Soon)</a></li>
-  </ul>
+<!-- Navigation -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Gallery</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Title Box -->
+<div class="box">
+  <h1>Welcome to MothCave</h1>
 </div>
 
-<div class="container">
-  <h1>Social</h1>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=ScMzIvxBSi4">YoutTube(placeholder)</a></li>
-    <li><a href="https://mothi.straw.page">Strawpage</a></li>
-  </ul>
+<!-- About Box -->
+<div class="box">
+  <h2>About</h2>
+  <p>This is MothCave, a place where cool things happen!</p>
 </div>
 
-<div class="container">
-  <h1>Testing Stuff</h1>
-  <ul>
-    <li><a href="https://mothi09.github.io/Games/">Games</a></li>
-     <li><a href="https://mothi.straw.page">test</a></li>
-  </ul>
+<!-- Message of the Day Box -->
+<div class="box">
+  <h2>Message of the Day</h2>
+  <p>Stay inspired and keep coding!</p>
 </div>
-  
+
+<!-- Mini Boxes Grid -->
+<div class="grid">
+  <div class="mini-box">Mini Box 1</div>
+  <div class="mini-box">Mini Box 2</div>
+  <div class="mini-box">Mini Box 3</div>
+  <div class="mini-box">Mini Box 4</div>
+  <div class="mini-box">Mini Box 5</div>
+  <div class="mini-box">Mini Box 6</div>
+</div>
+
 </body>
 </html>
-
-  
-</body>
-</html>
-
-
-</body>
-</html>
-
-<section class="Message of the day box">
-    <h2>Message of the day: October 14, 2025</h2>
-  <h>I broke the minesweeper. but i will add another game soon. Also, check out this link. im making a show.</h>
-  <p>--------</p>
-  <h>I will also hopefully make a site page for voting who to be eliminated.</h>
-  <h>ok bye.</h>
-  </section>
-
-
-  <section class="Message of the day box">
-    <h2>October 14, 2025</h2>
-  <h>sup</h>
-  <p>--------</p>
-  <h>testing out css again.</h>
-  </section>
- 
-<section class="cube-section">
-  <div class="cube-box">
-    <div class="cube">
-      <div class="face front">1</div>
-      <div class="face back">2</div>
-      <div class="face right">3</div>
-      <div class="face left">4</div>
-      <div class="face top">5</div>
-      <div class="face bottom">6</div>
-    </div>
-  </div>
-</section>
-
-  <section class="Message of the day box">
-    <h2>i messed up</h2>
-  <h>minesweeper is gone </h>
-  <p>--------</p>
-  <h>so sad :(</h>
-  </section>
-
-<section class="Message of the day box">
-  <h2>uhhh</h2>
-  <h>Trying to rearrange the whole site</h>
-  <p>---------</p>
-  <h>i hope it works. also im removing the rainbow. it hurts my eyes.</h>
-</section>
- 
-<footer class="box">
-    <p>© 2025 MothCave</p>
-  </footer>
