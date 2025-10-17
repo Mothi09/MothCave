@@ -1,3 +1,32 @@
+.tiny-top-link{
+  position: absolute;    /* or use fixed if you want it to stay while scrolling */
+  top: 8px;
+  right: 12px;
+  font-size: 12px;       /* very small text */
+  line-height: 1;
+  padding: 4px 6px;      /* tiny clickable area */
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: #111;
+  background: transparent;
+  border-radius: 4px;
+  z-index: 9999;
+  user-select: none;
+  transition: opacity .15s, transform .08s;
+}
+
+/* small hover effect but keep it subtle */
+.tiny-top-link:hover{
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* for small screens make sure it doesn't overlap other elements */
+@media (max-width: 480px){
+  .tiny-top-link { top: 6px; right: 8px; font-size: 11px; }
+}
+
+
 /* === General site layout === */
 body {
   background-color: #fc6d9a;
