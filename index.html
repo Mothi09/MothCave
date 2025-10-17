@@ -14,22 +14,6 @@
     text-align: center;
   }
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>House</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f76d99;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-  }
-  
   /* Navigation links */
   nav {
     margin: 20px 0;
@@ -47,7 +31,7 @@
   /* Boxes */
   .box {
     background: #ffadad;
-    border-radius: 15px;  /* rounded corners */
+    border-radius: 15px;
     padding: 20px;
     margin: 20px auto;
     max-width: 90%;
@@ -69,9 +53,43 @@
     width: 250px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
   }
+
+  /* Tiny upper-right link */
+  .tiny-top-link {
+    position: fixed;
+    top: 8px;
+    right: 12px;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 6px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: #000;
+    background: transparent;
+    border-radius: 4px;
+    z-index: 9999;
+    user-select: none;
+    transition: opacity 0.15s, transform 0.08s;
+  }
+
+  .tiny-top-link:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 480px) {
+    .tiny-top-link {
+      top: 6px;
+      right: 8px;
+      font-size: 11px;
+    }
+  }
 </style>
 </head>
 <body>
+
+<!-- Tiny link in upper-right corner -->
+<a class="tiny-top-link" href="https://mothi09.github.io/LonelyHouse/" target="_blank" rel="noopener">tiny link</a>
 
 <!-- Navigation -->
 <nav>
@@ -81,10 +99,9 @@
   <a href="#">Contact</a>
 </nav>
 
-  
 <!-- Title Box -->
 <div class="box">
-  <h1>Welcome to MothCave<small><small><small><li><a href="https://mothi09.github.io/MothCaveArchive/">The Archive</a></li></small></small></h1>
+  <h1>Welcome to MothCave</h1>
 </div>
 
 <!-- About Box -->
